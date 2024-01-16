@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_components_about_cards",
+  "info": {
+    "displayName": "AboutItem",
+    "icon": "dashboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "mediaUrl": {
+      "type": "string"
+    }
+  }
+}

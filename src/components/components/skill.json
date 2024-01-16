@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_components_skills",
+  "info": {
+    "displayName": "Skill",
+    "icon": "rocket",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "value": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    }
+  }
+}

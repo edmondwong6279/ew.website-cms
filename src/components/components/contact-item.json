@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_components_contact_items",
+  "info": {
+    "displayName": "ContactItem",
+    "icon": "message"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "linkText": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

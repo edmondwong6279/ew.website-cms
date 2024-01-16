@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_about_groups",
+  "info": {
+    "displayName": "AboutGroup",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "groupTitle": {
+      "type": "string"
+    },
+    "aboutItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.about-card"
+    }
+  }
+}

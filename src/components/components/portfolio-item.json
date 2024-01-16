@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_components_portfolio_items",
+  "info": {
+    "displayName": "PortfolioItem",
+    "icon": "medium",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "repositoryUrl": {
+      "type": "string"
+    },
+    "projectUrl": {
+      "type": "string"
+    },
+    "mediaUrl": {
+      "type": "string"
+    }
+  }
+}

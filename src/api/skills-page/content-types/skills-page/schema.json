@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "skills_pages",
+  "info": {
+    "singularName": "skills-page",
+    "pluralName": "skills-pages",
+    "displayName": "SkillsPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "skillGroups": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.skill-group",
+      "required": true
+    }
+  }
+}

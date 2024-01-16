@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_components_skill_groups",
+  "info": {
+    "displayName": "SkillGroup",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "groupName": {
+      "type": "string"
+    },
+    "groupDescription": {
+      "type": "text"
+    },
+    "skills": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.skill",
+      "required": true
+    }
+  }
+}
