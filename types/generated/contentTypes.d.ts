@@ -781,7 +781,7 @@ export interface ApiAboutPageAboutPage extends Schema.SingleType {
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
-    description: Attribute.RichText;
+    description: Attribute.RichText & Attribute.Required;
     aboutGroups: Attribute.Component<'components.about-group', true> &
       Attribute.Required;
     createdAt: Attribute.DateTime;
@@ -814,10 +814,10 @@ export interface ApiBlogBlog extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    description: Attribute.Text;
-    content: Attribute.RichText;
-    slug: Attribute.UID;
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.Text & Attribute.Required;
+    content: Attribute.RichText & Attribute.Required;
+    slug: Attribute.UID & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -840,8 +840,8 @@ export interface ApiBlogPageBlogPage extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    description: Attribute.RichText;
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.RichText & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -872,11 +872,12 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    tagline: Attribute.String;
-    description: Attribute.RichText;
-    contactItems: Attribute.Component<'components.contact-item', true>;
-    mediaUrl: Attribute.String;
+    title: Attribute.String & Attribute.Required;
+    tagline: Attribute.String & Attribute.Required;
+    description: Attribute.RichText & Attribute.Required;
+    contactItems: Attribute.Component<'components.contact-item', true> &
+      Attribute.Required;
+    mediaUrl: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -907,9 +908,10 @@ export interface ApiPortfolioPagePortfolioPage extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    description: Attribute.RichText;
-    portfolioItems: Attribute.Component<'components.portfolio-item', true>;
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.RichText & Attribute.Required;
+    portfolioItems: Attribute.Component<'components.portfolio-item', true> &
+      Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -940,8 +942,8 @@ export interface ApiSkillsPageSkillsPage extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    description: Attribute.RichText;
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.RichText & Attribute.Required;
     skillGroups: Attribute.Component<'components.skill-group', true> &
       Attribute.Required;
     createdAt: Attribute.DateTime;

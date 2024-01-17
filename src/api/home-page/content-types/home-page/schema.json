@@ -13,21 +13,26 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "tagline": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "contactItems": {
       "type": "component",
       "repeatable": true,
-      "component": "components.contact-item"
+      "component": "components.contact-item",
+      "required": true
     },
     "mediaUrl": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

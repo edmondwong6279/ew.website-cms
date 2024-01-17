@@ -8,10 +8,12 @@
   "options": {},
   "attributes": {
     "groupName": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "groupDescription": {
-      "type": "text"
+      "type": "text",
+      "required": false
     },
     "skills": {
       "type": "component",

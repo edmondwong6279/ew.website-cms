@@ -8,15 +8,18 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "value": {
       "type": "integer",
       "max": 5,
-      "min": 1
+      "min": 1,
+      "required": true
     }
   }
 }

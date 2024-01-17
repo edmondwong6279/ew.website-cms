@@ -13,15 +13,18 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "portfolioItems": {
       "type": "component",
       "repeatable": true,
-      "component": "components.portfolio-item"
+      "component": "components.portfolio-item",
+      "required": true
     }
   }
 }

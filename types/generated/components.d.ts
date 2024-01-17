@@ -8,9 +8,9 @@ export interface ComponentsAboutCard extends Schema.Component {
     description: '';
   };
   attributes: {
-    title: Attribute.String;
-    description: Attribute.RichText;
-    subtitle: Attribute.String;
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.RichText & Attribute.Required;
+    subtitle: Attribute.String & Attribute.Required;
     mediaUrl: Attribute.String;
   };
 }
@@ -23,7 +23,7 @@ export interface ComponentsAboutGroup extends Schema.Component {
     description: '';
   };
   attributes: {
-    groupTitle: Attribute.String;
+    groupTitle: Attribute.String & Attribute.Required;
     aboutItems: Attribute.Component<'components.about-card', true>;
   };
 }
@@ -51,8 +51,8 @@ export interface ComponentsPortfolioItem extends Schema.Component {
     description: '';
   };
   attributes: {
-    title: Attribute.String;
-    description: Attribute.RichText;
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.RichText & Attribute.Required;
     repositoryUrl: Attribute.String;
     projectUrl: Attribute.String;
     mediaUrl: Attribute.String;
@@ -67,7 +67,7 @@ export interface ComponentsSkillGroup extends Schema.Component {
     description: '';
   };
   attributes: {
-    groupName: Attribute.String;
+    groupName: Attribute.String & Attribute.Required;
     groupDescription: Attribute.Text;
     skills: Attribute.Component<'components.skill', true> & Attribute.Required;
   };
@@ -81,9 +81,10 @@ export interface ComponentsSkill extends Schema.Component {
     description: '';
   };
   attributes: {
-    title: Attribute.String;
-    description: Attribute.Text;
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.Text & Attribute.Required;
     value: Attribute.Integer &
+      Attribute.Required &
       Attribute.SetMinMax<{
         min: 1;
         max: 5;
