@@ -33,11 +33,12 @@ export interface ComponentsContactItem extends Schema.Component {
   info: {
     displayName: 'ContactItem';
     icon: 'message';
+    description: '';
   };
   attributes: {
     name: Attribute.String & Attribute.Required;
     linkText: Attribute.String & Attribute.Required;
-    description: Attribute.Text & Attribute.Required;
+    description: Attribute.Text;
     link: Attribute.String & Attribute.Required;
   };
 }

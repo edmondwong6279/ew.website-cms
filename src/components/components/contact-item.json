@@ -2,7 +2,8 @@
   "collectionName": "components_components_contact_items",
   "info": {
     "displayName": "ContactItem",
-    "icon": "message"
+    "icon": "message",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,7 +17,7 @@
     },
     "description": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "link": {
       "type": "string",
