@@ -27,6 +27,10 @@
     "slug": {
       "type": "uid",
       "required": true
+    },
+    "postDate": {
+      "type": "date",
+      "required": true
     }
   }
 }

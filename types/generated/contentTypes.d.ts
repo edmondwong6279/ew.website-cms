@@ -818,6 +818,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
     description: Attribute.Text & Attribute.Required;
     content: Attribute.RichText & Attribute.Required;
     slug: Attribute.UID & Attribute.Required;
+    postDate: Attribute.Date & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
