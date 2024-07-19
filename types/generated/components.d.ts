@@ -43,6 +43,17 @@ export interface ComponentsContactItem extends Schema.Component {
   };
 }
 
+export interface ComponentsMediaUrls extends Schema.Component {
+  collectionName: 'components_components_media_urls';
+  info: {
+    displayName: 'mediaUrls';
+    icon: 'apps';
+  };
+  attributes: {
+    mediaUrl: Attribute.String;
+  };
+}
+
 export interface ComponentsPortfolioItem extends Schema.Component {
   collectionName: 'components_components_portfolio_items';
   info: {
@@ -98,6 +109,7 @@ declare module '@strapi/types' {
       'components.about-card': ComponentsAboutCard;
       'components.about-group': ComponentsAboutGroup;
       'components.contact-item': ComponentsContactItem;
+      'components.media-urls': ComponentsMediaUrls;
       'components.portfolio-item': ComponentsPortfolioItem;
       'components.skill-group': ComponentsSkillGroup;
       'components.skill': ComponentsSkill;

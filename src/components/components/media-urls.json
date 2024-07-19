@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_media_urls",
+  "info": {
+    "displayName": "mediaUrls",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "mediaUrl": {
+      "type": "string"
+    }
+  }
+}

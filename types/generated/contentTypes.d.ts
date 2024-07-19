@@ -879,6 +879,7 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     contactItems: Attribute.Component<'components.contact-item', true> &
       Attribute.Required;
     mediaUrl: Attribute.String & Attribute.Required;
+    mediaUrls: Attribute.Component<'components.media-urls', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

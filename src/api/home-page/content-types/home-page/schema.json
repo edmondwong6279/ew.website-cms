@@ -33,6 +33,12 @@
     "mediaUrl": {
       "type": "string",
       "required": true
+    },
+    "mediaUrls": {
+      "displayName": "mediaUrls",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.media-urls"
     }
   }
 }
